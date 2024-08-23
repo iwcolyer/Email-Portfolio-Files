@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<style>
+body {
+    -webkit-text-size-adjust: 100%;
+    image-rendering: auto;
+}
+img {
+    display: block;
+    border: 0;
+}
+table, table td {
+    border-collapse: collapse;
+}
+a[href^=tel] {
+    color: #ffffff;
+    text-decoration: none;
+}
+div, table, td, p {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.appleLinksGray a {
+    color: #008076 !important;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 601px) {
+.mob_show {
+    display: none !important;
+}
+.mar_R35 {
+    margin-right: 35px !important;
+}
+}
+
+@media only screen and (max-width: 599px) {
+td[class="hide_mobile"], img[class="hide_mobile"], a[class="hide_mobile"] {
+    display: none !important;
+    width: 0 !important;
+    overflow : hidden !important;
+    float: left !important;
+    max-height: 0 !important;
+    visibility: hidden !important;
+}
+td[class="show_mobile"], img[class="show_mobile"], a[class="show_mobile"], img[class="show_mobile_50"], br[class="show_mobile"] {
+    display : block !important;
+    width : 100% !important;
+    overflow : visible !important;
+    float : none !important;
+    max-height: inherit !important;
+    visibility: visible !important;
+}
+img[class="show_mobile_50"] {
+    width: 50% !important;
+}
+table[class="w_100"], td[class="w_100"], table[class="w_90"], img[class="img_w_100"], td[class="w_80"], td[class="w_20"], td[class="w_100_footer"], td[class="w_100_padding_25"], td[class="w_100_padding_10"] {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    line-height: normal !important;
+}
+table[class="table_90"] {
+    width: 90% !important;
+}
+.td_stack_center_100 {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+.td_stack_50 {
+    display: block !important;
+    width: 50% !important;
+    text-align: left !important;
+    padding: 0 !important;
+}
+.table_unstack {
+    display: inline-block!important;
+    width: 200px !important;
+    text-align: left !important;
+    padding: 0 !important;
+}
+td[class="w_100_padding_10"] {
+    padding: 10px !important;
+}
+td[class="pad_RL_5"] {
+    padding-right: 5% !important;
+    padding-left: 5% !important;
+}
+td[class="pad_RL_10"] {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+td[class="pad_30_5"] {
+    padding-top: 30px !important;
+    padding-right: 5% !important;
+    padding-bottom: 30px !important;
+    padding-left: 5% !important;
+}
+td[class="w_100_footer"] {
+    padding: 18px !important;
+}
+table[class="w_97"] {
+    width: 97% !important;
+    min-width: 97% !important;
+    max-width: 97% !important;
+}
+table[class="w_90"] {
+    width: 90% !important;
+    min-width: 90% !important;
+    max-width: 90% !important;
+}
+table[class="table_65"] {
+    width: 65% !important;
+}
+td[class="w_90"] {
+    width: 90% !important;
+    min-width: 90% !important;
+    max-width: 90% !important;
+    padding: 7px !important;
+}
+td[class="td_w_95"] {
+    width: 100% !important;
+    padding: 0 5% !important;
+}
+td[class="w_80"] {
+    width: 80% !important;
+    min-width: 80% !important;
+    max-width: 80% !important;
+}
+td[class="w_50"] {
+    width: 50% !important;
+    min-width: 50% !important;
+    max-width: 50% !important;
+}
+td[class="w_20"] {
+    width: 20% !important;
+    min-width: 20% !important;
+    max-width: 20% !important;
+}
+img[class="img_w_150"] {
+    width: 150px !important;
+    height: auto !important;
+}
+img[class="img_w_100"] {
+    width: 100%;
+    height: auto !important;
+}
+img[class="img_w_90"] {
+    width: 90% !important;
+    height: auto !important;
+}
+img[class="img_w_80"] {
+    width: 80% !important;
+    height: auto !important;
+}
+img[class="img_w_50"] {
+    width: 50% !important;
+    height: auto !important;
+}
+img[class="img_w_35"] {
+    width: 35% !important;
+    height: auto !important;
+}
+img[class="img_w_25"] {
+    width: 25% !important;
+    height: auto !important;
+}
+.image_312 {
+    width: 312px !important;
+    height: auto !important;
+}
+img[class="img_center"] {
+    margin: 0px auto !important;
+}
+div[class="big_text"] {
+    font-size: 35px !important;
+    line-height: 110% !important;
+}
+div[class="medium_text"] {
+    font-size: 20px !important;
+    line-height: 130% !important;
+}
+td[class="td_mobile"], td[class="td_mobile_tx"], td[class="td_mobile_center"] {
+    display: block !important;
+    width: 100% !important;
+}
+td[class="td_mobile_tx"] {
+    padding: 5px 25px 25px 25px !important;
+}
+td[class="td_mobile_center"] {
+    text-align: center !important;
+    margin: 0px auto !important;
+}
+td[class="td_mobile_padding_25"] {
+    display: block !important;
+    padding: 25px !important;
+    width: 100% !important;
+}
+mobile_font {
+    font-size: 14px !important;
+    line-height: 22px !important;
+}
+img[class="img_block_center"] {
+    display: block !important;
+    margin: 0px auto !important;
+}
+.dont-break-out {
+    font-size: 22px;
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+.w20 {
+    width: 20px !important;
+}
+.h30 {
+    height: 30px !important;
+}
+.mob_ht_10 {
+    height: 10px !important;
+    font-size: 10px !important;
+    line-height: 10px !important;
+}
+.hide {
+    display: none !important;
+}
+.padRL_10 {
+    padding-right: 10% !important;
+    padding-left: 10% !important;
+}
+.mob-mar0 {
+    margin: 0 !important;
+}
+.mob-mar_T15 {
+    margin-top: 15px !important;
+}
+}
+
+@media only screen and (max-width: 422px) {
+.hide422 {
+    display: none !important;
+}
+}
+
+@media only screen and (max-width: 398px) {
+.hide39 {
+    display: none !important;
+}
+}
+
+@media only screen and (max-width: 365px) {
+.hide365 {
+    display: none !important;
+}
+}
+</style>
+</head>
+<body style="width:100%;margin:0;padding:0;" bgcolor="#ffffff">
+<!-- PRE-HEADER TEXT --> 
+<!--[if !mso 9]><!--> 
+<span style="display:none !important;visibility:hidden;opacity:0;color:transparent;height:0;width:0;"> </span> 
+<!--<![endif]-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#d9f0f9" class="w_100">
+  <tr>
+    <td bgcolor="#d9f0f9" class="hide">&nbsp;</td>
+    <td width="600" align="center" valign="top" bgcolor="#d9f0f9" style="" class="w_100"><!-- START OF MAIN CONTENT TABLE -->
+      
+      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff" class="w_100" style="max-width:600px;margin:0 auto;">
+        <tr>
+          <td width="" align="center" valign="middle"><table cellpadding="0" cellspacing="0" border="0" align="center" width="600" class="table_100">
+              <tr>
+                <td width="66" align="center" valign="middle" bgcolor="#ffffff" class=""><div style="font-size:66px; line-height:66px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;width: 66px" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="66" height="27"></div></td>
+                <td width="78%%" align="center" valign="top" bgcolor="#ffffff" class="w_100" style="padding-top:0px;padding-right:0px;padding-bottom:10px;padding-left:0px;max-width:600px;"><a href="http://{(HOSPITAL_URL)}?utm_source=labor-day-nl&utm_medium=email&utm_content=hospital_name&utm_campaign=crm-holiday-hazards-campaign" target="_blank"><img src="https://vca-content.s3.amazonaws.com/2022/Universal/VCA_Main_Logo_TM_RGB.png" alt="VCA(R)" width="190" style="border:0;display:block;margin:0 auto;width:190px; height:auto;" class="img_w_35"></a></td>
+                <td width="66" valign="top" bgcolor="#ffffff"><img src="https://vca-content.s3.amazonaws.com/2023/Newsletter/Memorial_Day/Header_Rounded_Corner.jpg" width="66" style="width: 66px; height: auto"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td width="100%" align="center" valign="top" bgcolor="#ffffff" style="margin:0;padding:0px;max-width:600px;" class="w_100"><span class="w_100" style="margin:0 auto;padding:0px"><img src="https://i.imgur.com/LP9ejRx.jpeg" alt="" width="600"  class="img_w_100" style="border:0;display:block;margin:0;width:600px;max-width: 600px; height:auto; "></span></td>
+        </tr>
+        <tr>
+          <td width="600" align="center" valign="middle" bgcolor="#ffffff"><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+        </tr>
+        <!-- START MODULE 3 COL STACK -->
+        <tr>
+          <td align="center" valign="middle" bgcolor="#ffffff"><table width="546" border="0" align="center" cellpadding="0" cellspacing="0" style="width: 546px" class="table_90">
+              <tr>
+                <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27" class="hide"></div></td>
+                <!-- START L COL -->
+                <th width="156" align="center" valign="top" class="td_stack_center_100" style="font-family:Arial, Helvetica, sans-serif;font-size: 10px; line-height: 12px;text-align: center; margin: 0 auto"><table cellpadding="0" cellspacing="0" border="0" align="center" valign="middle" width="100%" class="table_unstack" style="margin: 0 auto">
+                    <tr>
+                      <td width="100%" align="center" style="display: block" class=""><a href="https://vcahospitals.com/shop/promotions/holiday/grill-safety-for-dog-owners?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-grilling-labor-day-image&utm_campaign=crm-holiday-hazards-campaign" style="text-decoration: none" target="_blank"><img src="https://i.imgur.com/ytw6WGM.jpeg" width="156" height="" style="width:: 156px; height: auto; display: block; margin: 0 auto" alt="Module 1" class=""></a></td>
+                    </tr>
+                  </table>
+                  <table cellpadding="0" cellspacing="0" border="0" align="center" valign="top" width="100%" class="table_unstack" style="margin: 0 auto">
+                    <tr>
+                      <td width="100%" align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif;display: block; font-size: 16px; line-height: 24px;color: #2d2b26;font-weight: normal; text-align: left" class=""><br>
+                        <a href="https://vcahospitals.com/shop/promotions/holiday/grill-safety-for-dog-owners?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-grilling-labor-day-headline&utm_campaign=crm-holiday-hazards-campaign" style="font-family:Arial, Helvetica, sans-serif;color: #2d2b26; line-height:22px;font-size:18px; font-weight: bold; text-decoration: none">Food Safety</a> <br>
+                        Avoid keeping these grilling accessories near your dog. <br>
+                        <a href="https://vcahospitals.com/shop/promotions/holiday/grill-safety-for-dog-owners?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-grilling-labor-day-cta&utm_campaign=crm-holiday-hazards-campaign" style="font-family:Arial, Helvetica, sans-serif; line-height:22px;font-size:18px;color: #164994; text-decoration: underline; font-weight: bold">Learn More &gt;</a></td>
+                    </tr>
+                  </table></th>
+                <!-- END L COL -->
+                <th width="39" align="center" valign="middle" class="td_stack_center_100"><img src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="39" height="39" border="0" alt=""></th>
+                <!-- START MID COL -->
+                <th width="156" align="center" valign="top" class="td_stack_center_100" style="font-family:Arial, Helvetica, sans-serif;font-size: 10px; line-height: 12px;text-align: center; margin: 0 auto; direction: rtl"><table cellpadding="0" cellspacing="0" border="0" align="center" valign="middle" width="100%" class="table_unstack" style="margin: 0 auto;direction: ltr;">
+                    <tr>
+                      <td width="100%" align="center" style="display: block" class=""><a href="https://vcahospitals.com/shop/promotions/holiday/get-your-dog-ready-fall-allergies-are-just-around-the-corner?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-allergy-labor-day-image&utm_campaign=crm-holiday-hazards-campaign" style="text-decoration: none" target="_blank"><img src="https://i.imgur.com/yLTNpim.jpeg" width="156" height="" style="width:: 156px; height: auto; display: block; margin: 0 auto" alt="Module 1" class=""></a></td>
+                    </tr>
+                  </table>
+                  <table cellpadding="0" cellspacing="0" border="0" align="center" valign="top" width="100%" class="table_unstack" style="margin: 0 auto">
+                    <tr>
+                      <td width="100%" align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif;display: block; font-size: 16px; line-height: 24px;color: #2d2b26;font-weight: normal;text-align: left;direction: ltr" class=""><br>
+                        <a href="https://vcahospitals.com/shop/promotions/holiday/get-your-dog-ready-fall-allergies-are-just-around-the-corner?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-allergy-labor-day-headline&utm_campaign=crm-holiday-hazards-campaign" style="font-family:Arial, Helvetica, sans-serif;color: #2d2b26; line-height:22px;font-size:18px; font-weight: bold; text-decoration: none">Don’t Sneeze at This!</a> <br>
+                        How to find out if your dog has fall allergies.<br>
+                        <a href="https://vcahospitals.com/shop/promotions/holiday/get-your-dog-ready-fall-allergies-are-just-around-the-corner?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-allergy-labor-day-cta&utm_campaign=crm-holiday-hazards-campaign" style="font-family:Arial, Helvetica, sans-serif; line-height:22px;font-size:18px;color: #164994; text-decoration: underline; font-weight: bold">Learn More &gt;</a></td>
+                    </tr>
+                  </table></th>
+                <!-- END MID COL -->
+                <th width="39" align="center" valign="middle" class="td_stack_center_100"><img src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="39" height="39" border="0" alt=""></th>
+                <!-- START R COL -->
+                <th width="156" align="center" valign="top" class="td_stack_center_100" style="font-family:Arial, Helvetica, sans-serif;font-size: 10px; line-height: 12px;text-align: center; margin: 0 auto"><table cellpadding="0" cellspacing="0" border="0" align="center" valign="middle" width="100%" class="table_unstack" style="margin: 0 auto">
+                    <tr>
+                      <td width="100%" align="center" style="display: block" class=""><a href="https://vcahospitals.com/shop/promotions/holiday/back-to-school-safety-for-dogs?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-school-labor-day-image&utm_campaign=crm-holiday-hazards-campaign" style="text-decoration: none" target="_blank"><img src="https://i.imgur.com/0jpNyGy.jpeg" width="156" height="" style="width:: 156px; height: auto; display: block; margin: 0 auto" alt="Module 1" class=""></a></td>
+                    </tr>
+                  </table>
+                  <table cellpadding="0" cellspacing="0" border="0" align="center" valign="top" width="100%" class="table_unstack" style="margin: 0 auto">
+                    <tr>
+                      <td width="100%" align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif;display: block; font-size: 16px; line-height: 24px;color: #2d2b26;font-weight: normal;text-align: left" class=""><br>
+                        <a href="https://vcahospitals.com/shop/promotions/holiday/back-to-school-safety-for-dogs?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-school-labor-day-headline&utm_campaign=crm-holiday-hazards-campaign" style="font-family:Arial, Helvetica, sans-serif; color: #2d2b26;line-height:22px;font-size:18px; font-weight: bold; text-decoration: none">Take Note</a> <br>
+                        Back to school season can affect your dog, too. <br>
+                        <a href="https://vcahospitals.com/shop/promotions/holiday/back-to-school-safety-for-dogs?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-school-labor-day-cta&utm_campaign=crm-holiday-hazards-campaign" style="font-family:Arial, Helvetica, sans-serif; line-height:22px;font-size:18px;color: #164994; text-decoration: underline; font-weight: bold">Learn More &gt;</a></td>
+                    </tr>
+                  </table></th>
+                <!-- END R COL -->
+                <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27" class="hide"></div></td>
+              </tr>
+            </table></td>
+        </tr>
+        <!-- END MODULE 3 COL STACK -->
+        <tr>
+          <td width="600" align="center" valign="middle" bgcolor="#ffffff"><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+        </tr>
+        <!-- START MODULE -->
+        <tr>
+          <td align="center" valign="middle" bgcolor="#ffffff"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="" class="">
+              <tr>
+                <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27"></div></td>
+                <td align="center"><table cellpadding="0" cellspacing="0" border="0" width="546" bgcolor="#9edbe9" style="width: 546px; margin: 0 auto" class="w_100">
+                    <tr>
+                      <td width="600" align="center" valign="middle" bgcolor=""><div style="font-size:25px; line-height:25px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="25" height="25"></div></td>
+                    </tr>
+                    <tr>
+                      <td width="60%" align="" valign="top" class="" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:22px;text-align: center; color:#2d2b25; font-weight:normal;  padding: 0px" ><a href="https://vcahospitals.com/shop/promotions/holiday/dog-park-safety-tips?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-park-labor-day-headline&utm_campaign=crm-holiday-hazards-campaign" style="color:#2d2b25;font-size:18px; line-height: 24px; font-weight:bold;text-decoration: none" class="mob_show ">Dog Park Safety</a></td>
+                    </tr>
+                    <!-- <tr>
+                      <td width="600" align="center" valign="middle" bgcolor="" class="mob_show "><div style="font-size:20px; line-height:20px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="20" height="20"></div></td>
+                    </tr> -->
+                    <tr>
+                      <td align="center" valign="middle" bgcolor=""><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" style="" class="table_65">
+                          <tr>
+                            <td width="40%" align="center" valign="middle" class="w_50"><a href="https://vcahospitals.com/shop/promotions/holiday/dog-park-safety-tips?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-park-labor-day-image&utm_campaign=crm-holiday-hazards-campaign" style="text-decoration: none"><img src="https://i.imgur.com/vnmIzAc.png" width="218" alt="Out door safety tips" style="width: 218px; height: auto; text-align: center" class="img_w_100"></a></td>
+                            <td width="40" align="center" valign="middle" class="w20"><img src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="40" height="25" border="0" style="width: 40px" alt="" class="mobile"></td>
+                            <td width="60%" align="" valign="middle" class="w_50" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:22px;text-align: left; color:#2d2b25; font-weight:normal;  padding: 0px" ><a href="https://vcahospitals.com/shop/promotions/holiday/dog-park-safety-tips?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-park-labor-day-headline&utm_campaign=crm-holiday-hazards-campaign" style="font-family:Arial, Helvetica, sans-serif;color:#2d2b25;font-size:18px; line-height: 24px; font-weight:bold;text-decoration: none" class="hide">Dog Park Safety <br>
+                              <br>
+                              </a>A safe day at the dog park starts with these tips.<br>
+                              <br>
+                              <a href="https://vcahospitals.com/shop/promotions/holiday/dog-park-safety-tips?utm_source=labor-day-nl&utm_medium=email&utm_content=dog-park-labor-day-cta&utm_campaign=crm-holiday-hazards-campaign" style="font-family:Arial, Helvetica, sans-serif; color: #164994; text-decoration: underline; font-weight: bold">Knock It Out of the Park &gt;</a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="600" align="center" valign="middle" bgcolor=""><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+                    </tr>
+                  </table></td>
+                <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide_mobile"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27"></div></td>
+              </tr>
+            </table></td>
+        </tr>
+        <!-- END MODULE -->
+        <tr>
+          <td width="600" align="center" valign="middle" bgcolor="#ffffff"><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+        </tr>
+        <!-- START MODULE -->
+        <tr>
+          <td align="center" valign="middle" bgcolor="#ffffff"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="" class="">
+              <tr>
+                <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27"></div></td>
+                <td align="center"><table cellpadding="0" cellspacing="0" border="0" width="546" bgcolor="#164994" style="width: 546px" class="w_100">
+                    <tr>
+                      <td align="center"><a href="https://vcahospitals.com/shop/promotions/holiday/are-bones-good-for-dog-teeth?utm_source=labor-day-nl&utm_medium=email&utm_content=askvca-bones-cta&utm_campaign=crm-holiday-hazards-campaign" style="text-decoration: none" target="_blank"><img src="https://i.imgur.com/2gZFfd5.jpeg" width="544" border="0" style="width: 544px;max-width: 544px; height: auto; margin: 0 auto" alt="Can I give my dog real bones?" class=""></a></td>
+                    </tr>
+                  </table></td>
+                <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27"></div></td>
+              </tr>
+            </table></td>
+        </tr>
+        <!-- END MODULE -->
+        <tr>
+          <td width="600" align="center" valign="middle" bgcolor="#ffffff"><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+        </tr>
+        <!-- START MYVCA MODULE -->
+        <tr>
+          <td align="center" valign="middle" bgcolor="#ffffff"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="" class="">
+              <tr>
+                <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27"></div></td>
+                <td align="center"><table cellpadding="0" cellspacing="0" border="0" width="546" bgcolor="#d9f0f9" style="width: 546px" class="w_100">
+                    <tr>
+                      <td width="600" align="center" valign="middle" bgcolor=""><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+                    </tr>
+                    <tr>
+                      <td align="center"><img src="https://i.imgur.com/UYExwSx.png" width="122" border="0" style="width: 122px; height: auto; margin: 0 auto" alt="myVCA Live Chat 24/7" class=""></td>
+                    </tr>
+                    <tr>
+                      <td width="600" align="center" valign="middle" bgcolor=""><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height: 22px; color:#2d2b26; font-weight:normal; text-align: center" class="padRL_10"><span style="font-size:18px; line-height: 22px; color: #164994; font-weight: bold">Worried your pet has eaten barbecued food? </span> <br>
+                        <br>
+                        <strong>Access free 24/7 Live Chat through the myVCA app,</strong> <br>
+                        where our licensed veterinary professionals are always ready to <br>
+                        answer your health and safety questions. </td>
+                    </tr>
+                    <tr>
+                      <td width="600" align="center" valign="middle" bgcolor=""><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle" bgcolor=""><table cellpadding="0" cellspacing="0" border="0" width="180">
+                          <tr>
+                            <td align=""><a href="https://vcahospitals.com/myvca-text-appointment-reminders?utm_source=labor-day-nl&utm_medium=email&utm_content=download-labor-day-cta&utm_campaign=crm-holiday-hazards-campaign" style="text-decoration: none" target="_blank"><img src="https://i.imgur.com/gnY5Ebw.png" width="180" border="0" alt="Download Now" class="img_w_100"></a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="600" align="center" valign="middle" bgcolor=""><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+                    </tr>
+                  </table></td>
+                <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27"></div></td>
+              </tr>
+            </table></td>
+        </tr>
+        <!-- END MYVCA MODULE -->
+        <tr>
+          <td width="600" align="center" valign="middle" bgcolor="#ffffff"><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+        </tr>
+        <!-- START URGENT CARE INLUSIO --> 
+        <!-- START MODULE -->
+        <tr>
+          <td align="center" bgcolor="#ffffff"><table cellpadding="0" cellspacing="0" border="0" width="100%" class="table_80">
+              <tr>
+                <td align="center" valign="middle" bgcolor="#ffffff"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="" class="">
+                    <tr>
+                      <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27"></div></td>
+                      <td align="center"><table cellpadding="0" cellspacing="0" border="0" width="546" bgcolor="" style="width: 546px" class="w_100">
+                          <tr>
+                            <td align="center" valign="middle" bgcolor=""><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="" class="">
+                                <tr>
+                                  <th width="40%" align="" valign="top" class="td_stack_center_100"><img src="https://i.imgur.com/W7omX7j.jpeg" width="260" style="width: 260px; height: auto; text-align: left; margin: 0 auto;" alt="sick dog under blanket" class="image_312"></th>
+                                  <th width="35" align="center" valign="middle" class="td_stack_center_100"><img src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="35" height="30" border="0" alt="" class="h30"></th>
+                                  <th width="60%" align="left" valign="top" class="td_stack_50" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:22px;color:#2d2b25; font-weight:normal;margin: 0 auto"><img src="https://vca-content.s3.amazonaws.com/2024/Covid%20Support/Memorial/Cat/vca-Urgent-Care-logo.png" alt="VCA Animal Hospitals Urgent Care" style="width: 216px;max-width: 216px; text-align: left; display: block" width="216" class=""> <br>
+                                    <span style="18px; font-weight: bold">When Care Can’t Wait</span> <br>
+                                    There’s no good time for health issues to pop up. VCA Animal Hospitals Urgent Care is here when your pet needs timely <br class="hide">
+                                    care, with same-day availability <br class="hide">
+                                    for allergic reactions, vomiting <br class="hide">
+                                    and more. <br>
+                                    <br>
+                                    <a href="https://{(PLACEHOLDER_1)}?utm_source=labor-day-nl&utm_medium=email&utm_content=urgent-care-cta&utm_campaign=crm-holiday-hazards-campaign" style="color: #164994; font-weight: bold; text-decoration: underline">Prepare for the unexpected. <br>
+                                    Find an Urgent Care Near You &gt;</a></th>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                      <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27"></div></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+        <!-- END MODULE -->
+        <tr>
+          <td width="600" align="center" valign="middle" bgcolor="#ffffff"><div style="font-size:40px; line-height:40px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="40" height="40"></div></td>
+        </tr>
+        <!-- END URGENT CARE INLUSIO -->
+        <tr>
+          <td align="center" valign="middle" bgcolor="#ffffff"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="" class="">
+              <tr>
+                <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27"></div></td>
+                <td align="center"><table cellpadding="0" cellspacing="0" border="0" width="546" bgcolor="#9fdae9" style="width: 546px" class="w_100">
+                    <tr>
+                      <td width="600" align="center" valign="middle" bgcolor=""><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height: 22px; color:#2d2b26; font-weight:bold; text-align: center" class="padRL_10">Access All Our Safety Tips <br>
+                        for Your Pet in One Place</td>
+                    </tr>
+                    <tr>
+                      <td width="600" align="center" valign="middle" bgcolor=""><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="middle" bgcolor=""><table cellpadding="0" cellspacing="0" border="0" width="170">
+                          <tr>
+                            <td align=""><a href="https://vcahospitals.com/shop/promotions/holiday?utm_source=labor-day-nl&utm_medium=email&utm_content=holiday-hazards-lp-cta&utm_campaign=crm-holiday-hazards-campaign" style="text-decoration: none" target="_blank"><img src="https://vca-content.s3.amazonaws.com/2023/Newsletter/Labor_Day/Check-CTA@2x.png" width="170" border="0" alt="Check It Out" class="img_w_100"></a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="600" align="center" valign="middle" bgcolor=""><div style="font-size:30px; line-height:30px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="30" height="30"></div></td>
+                    </tr>
+                  </table></td>
+                <td width="27" align="center" valign="middle" bgcolor="#ffffff" class="hide"><div style="font-size:27px; line-height:27px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="27" height="27"></div></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td width="600" align="center" valign="middle" bgcolor="#ffffff"><div style="font-size:40px; line-height:40px; margin:0; padding:0;"><img style="display:block; border:0px; margin:0px auto;" src="https://vca-content.s3.amazonaws.com/common/spacer.gif" width="40" height="40"></div></td>
+        </tr>
+        <tr>
+          <td width="100%" align="center" valign="top" bgcolor="#164994" class="w_100" style="font-family:Arial,  sans-serif; font-size:15px; color:#ffffff; line-height:18px; padding:10px 0 30px; text-decoration: none; text-align: center; margin: 0 auto; max-width:600px;"><center>
+              <img src="https://vca-content.s3.amazonaws.com/2022/Universal/VCA_Caret_TM_RGB_White.png" alt="" style="width: 91px; margin: 0 auto; text-align: center; display: block" width="91" class="">
+            </center>
+            <span style="color:#ffffff;font-size: 18px; line-height: 24px "><strong>{[VCA - Clinic Ext Name fix case LB|1681]}</strong></span><br>
+            {(clinic_address)}<br>
+            {(clinic_city)}, {(clinic_state)} {(clinic_zip)}<br>
+            <strong>P</strong> <a href="tel:{(clinic_phone)}" style="color:#ffffff;text-decoration:none;">{(clinic_phone)}</a><br>
+            <a href="http://{(HOSPITAL_URL)}" target="_blank" style="color:#ffffff;text-decoration: none;"><strong>{(HOSPITAL_URL)}</strong></a></td>
+        </tr>
+        <!-- START OF FOOTER ICONS -->
+        <tr>
+          <td width="100%" align="center" valign="top" bgcolor="#ffffff" class="w_100_padding_10" style="font-size:12px; line-height:normal; padding-top:20px;padding-right:40px;padding-bottom:0px;padding-left:40px; background-color: #ffffff;max-width:600px;"><a href="https://vcahospitals.com/login?r=%2fmyvca%2fappointments-and-reminders%3f?utm_source=labor-day-nl&utm_medium=email&utm_content=appointments&utm_campaign=crm-holiday-hazards-campaign" target="_blank"><img src="https://vca-content.s3.amazonaws.com/2022/Universal/appointments-icon.png" alt="Appointments" width="110" class="" style="width:110px;height:auto;border:0;display:inline;margin:0 auto;" /></a> <a href="https://vcahospitals.com/login?r=%2fmyvca%2fappointments-and-reminders%3f?utm_source=labor-day-nl&utm_medium=email&utm_content=reminders&utm_campaign=crm-holiday-hazards-campaign" target="_blank"><img src="https://vca-content.s3.amazonaws.com/2022/Universal/reminders-icon.png" alt="Reminders" width="110" class="" style="width:110px;height:auto;border:0;display:inline;margin:0 auto;" /></a> 
+            <!--[if !mso 9]><!--> 
+            <br class="show_mobile" style="display: none; width: 0px; overflow : hidden; float: left; max-height:0px; visibility:hidden;">
+            
+            <!--<![endif]--> 
+            <a href="https://vcahospitals.com/login?r=%2fmyvca%2frefills%3f?utm_source=labor-day-nl&utm_medium=email&utm_content=refills&utm_campaign=crm-holiday-hazards-campaign" target="_blank"><img src="https://vca-content.s3.amazonaws.com/2022/Universal/refill-icon.png" alt="Refill online" width="110" class="" style="width:110px;height:auto;border:0;display:inline;margin:0 auto;" /></a> <a href="https://vcahospitals.com/myvca-text-appointment-reminders?utm_source=labor-day-nl&utm_medium=email&utm_content=myvca&utm_campaign=crm-holiday-hazards-campaign" target="_blank"><img src="https://vca-content.s3.amazonaws.com/2022/Universal/24-7-live-chat-icon.png" alt="24/7 Live Chat" width="110" class="" style="width:110px;height:auto;border:0;display:inline;margin:0 auto;" /></a></td>
+        </tr>
+        <!-- END OF FOOTER ICONS --> 
+        <!-- START OF SOCIAL FOOTER -->
+        <tr>
+          <td width="100%" align="center" valign="top" bgcolor="#ffffff" class="w_100_padding_10" style="font-family:Arial,  sans-serif;font-size:12px; line-height:normal; color:#3e3e3e;padding-top:40px;padding-right:40px;padding-bottom:30px;padding-left:40px;max-width:600px;"><a href="https://www.facebook.com/VCAAnimalHospitals/"> <img src="https://vca-content.s3.amazonaws.com/2022/Universal/facebook.png" alt="facebook" width="39" class="" style="display:inline;width:39px;height:auto;" border="0"/></a> <a href="https://twitter.com/VCAPetHealth"><img src="https://vca-content.s3.amazonaws.com/2022/Universal/twitter.png" alt="twitter" width="39" class="" style="display:inline;width:39px;height:auto;" border="0"/></a> <a href="https://www.instagram.com/vca/"><img src="https://vca-content.s3.amazonaws.com/2022/Universal/instagram.png" alt="instagram" width="39" class="" style="display:inline;width:39px;height:auto;" border="0"/></a> <a href="https://www.youtube.com/AskVCA"><img src="https://vca-content.s3.amazonaws.com/2022/Universal/YouTube.png" alt="YouTube" width="39" class="" style="display:inline;width:39px;height:auto;" border="0"/></a></td>
+        </tr>
+        <!-- END OF SOCIAL FOOTER --> 
+        <!-- START OF FOOTER NAV TR -->
+        <tr>
+          <td width="100%" align="center" valign="top" bgcolor="#ffffff" style="font-family:Arial,  sans-serif;font-size:12px; line-height:16px; color:#2d2b26;padding-top:0px;padding-right:50px;padding-bottom:20px;padding-left:50px;max-width:600px;" class="w_100_footer"><a href="http://x.e.vca.com/ats/msg.aspx?sg1={(URLSignature1)}" target="_blank" style="color:#2d2b26;text-decoration: underline;font-weight: normal;">View in browser</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://x.e.vca.com/ats/show.aspx?cr=1076&fm=19&tp={(TrackingParams)}" target="_blank" style="color:#2d2b26; text-decoration:underline; font-weight: normal;">Unsubscribe</a></td>
+        </tr>
+        <!-- END OF FOOTER NAV TR -->
+        <tr>
+          <td width="100%" align="center" valign="top" bgcolor="#ffffff" style="font-family:Arial,  sans-serif;font-size:12px; line-height:16px; color:#565451;padding-top:0px;padding-right:40px;padding-bottom:25px;padding-left:40px;max-width:600px;" class="w_100_footer">VCA Animal Hospitals’ emails are not intended to provide medical advice nor replace the doctor/client/patient relationship. If you have any concerns about your pet’s health, or if your pet has an emergency, contact your veterinarian immediately. <br>
+            <br>
+            Live Chat with a licensed veterinary professional is free for VCA clients through the myVCA mobile app, available at Apple's App Store and Google Play.<br>
+            <br>
+            
+            <!--  CareClub Memberships are preventive pet health care plans and not pet insurance. <br class="hide">
+            CareClub Membership covers only the selected health care services and products which are specifically identified in the applicable CareClub Membership agreement. <br>
+            <br> --> 
+            {[DC_State_Disclaimer|64268]}
+            For information on how we collect and use information about you and your pet, and how you may opt out of some uses, please see our <a href="https://www.mars.com/privacy" style="color:#565451; text-decoration: underline;">Privacy Policy</a>.<br>
+            <br>
+            VCA is a registered trademark of VCA Inc. or its affiliated companies. <br>
+            TM of VCA Inc. or its affiliated companies. <br>
+            VCA Animal Hospitals, 12401 W. Olympic Blvd., Los Angeles, CA 90064<br>
+            &copy;{(MessageMergeTime||d:yyyy)} VCA Animal Hospitals Inc.<br>
+            VC 5211-CRM-LD</td>
+        </tr>
+      </table>
+      
+      <!-- END OF MAIN CONTENT TABLE --></td>
+    <td bgcolor="#d9f0f9" class="hide_mobile">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
